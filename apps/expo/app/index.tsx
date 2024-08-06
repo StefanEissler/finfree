@@ -1,15 +1,12 @@
-import { HomeScreen } from 'app/features/home/screen'
-import { Stack } from 'expo-router'
+import { H1 } from "@my/ui";
+import { Link } from "expo-router";
 
-export default function Screen() {
+
+export default function Page() {
   return (
     <>
-      <Stack.Screen
-        options={{
-          title: 'Home',
-        }}
-      />
-      <HomeScreen />
+      <H1>Welcome</H1>
+      <Link href="/home">To the Tabs</Link>
     </>
   )
 }

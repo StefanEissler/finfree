@@ -8,6 +8,7 @@ import Head from 'next/head'
 import { NextThemeProvider, useRootTheme } from '@tamagui/next-theme'
 import type { SolitoAppProps } from 'solito'
 import { Provider } from 'app/provider'
+import Layout from 'components/layout'
 
 if (process.env.NODE_ENV === 'production') {
   require('../public/tamagui.css')
@@ -46,7 +47,9 @@ function ThemeProvider({ children }: { children: React.ReactNode }) {
       }}
     >
       <Provider disableRootThemeClass disableInjectCSS defaultTheme={theme}>
-        {children}
+        <Layout>
+          {children}
+        </Layout>
       </Provider>
     </NextThemeProvider>
   )

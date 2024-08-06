@@ -2260,6 +2260,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@kurkle/color@npm:^0.3.0":
+  version: 0.3.2
+  resolution: "@kurkle/color@npm:0.3.2"
+  checksum: 10/079c4b7688061070f1d570cee4cf0e7c4085867b940688ff80356a56825a5ace7077257c9ec5863eb344a8eae78379388ab57cdf9d75c491389fad56f411cd43
+  languageName: node
+  linkType: hard
+
 "@manypkg/cli@npm:^0.21.4":
   version: 0.21.4
   resolution: "@manypkg/cli@npm:0.21.4"
@@ -2355,6 +2362,7 @@ __metadata:
   dependencies:
     "@my/config": "npm:0.0.1"
     "@tamagui/build": "npm:^1.108.0"
+    "@tamagui/lucide-icons": "npm:^1.108.0"
     "@tamagui/toast": "npm:^1.108.0"
     tamagui: "npm:^1.108.0"
   languageName: unknown
@@ -3505,6 +3513,192 @@ __metadata:
   dependencies:
     "@swc/counter": "npm:^0.1.3"
   checksum: 10/ed66c26b36972a74f852c1781fadc75946578abfeeea58f110684833b5d1e70f28a77ddb82fd5bf3cf3c4dad0e1b6a1c924d7e2cc7a99f9b16ed16fe266bba25
+  languageName: node
+  linkType: hard
+
+"@syncfusion/ej2-base@npm:~26.2.5":
+  version: 26.2.5
+  resolution: "@syncfusion/ej2-base@npm:26.2.5"
+  dependencies:
+    "@syncfusion/ej2-icons": "npm:~26.2.5"
+  bin:
+    syncfusion-license: bin/syncfusion-license.js
+  checksum: 10/05acdf0933a77243eed401de2420cb994d59a27faff88eb0808bed271e03dde4979c68f3d1d0229ddf3c0b1048414b5d2900bba355997dbc1f637734aec0008b
+  languageName: node
+  linkType: hard
+
+"@syncfusion/ej2-buttons@npm:~26.2.5, @syncfusion/ej2-buttons@npm:~26.2.7":
+  version: 26.2.7
+  resolution: "@syncfusion/ej2-buttons@npm:26.2.7"
+  dependencies:
+    "@syncfusion/ej2-base": "npm:~26.2.5"
+  checksum: 10/b88ce83347cd1264caeea0a060fa23f47dae07d85be9c31d508a9470f2e8f061bdf7034eee10b30fbccd65ed22690b7fe4562ef40786eb8fd3621013eebe706b
+  languageName: node
+  linkType: hard
+
+"@syncfusion/ej2-calendars@npm:~26.2.5":
+  version: 26.2.5
+  resolution: "@syncfusion/ej2-calendars@npm:26.2.5"
+  dependencies:
+    "@syncfusion/ej2-base": "npm:~26.2.5"
+    "@syncfusion/ej2-buttons": "npm:~26.2.5"
+    "@syncfusion/ej2-inputs": "npm:~26.2.5"
+    "@syncfusion/ej2-lists": "npm:~26.2.5"
+    "@syncfusion/ej2-popups": "npm:~26.2.5"
+  checksum: 10/02eff07851380115724c5ccd9b420539684f190572ca516fc7a28fce8a284abd4bf7d7e39ec80ab1a610f82411e4e0b5f446f3f51f793ba5a03e8c71667ea5a5
+  languageName: node
+  linkType: hard
+
+"@syncfusion/ej2-charts@npm:26.2.5":
+  version: 26.2.5
+  resolution: "@syncfusion/ej2-charts@npm:26.2.5"
+  dependencies:
+    "@syncfusion/ej2-base": "npm:~26.2.5"
+    "@syncfusion/ej2-calendars": "npm:~26.2.5"
+    "@syncfusion/ej2-data": "npm:~26.2.5"
+    "@syncfusion/ej2-excel-export": "npm:~26.2.5"
+    "@syncfusion/ej2-navigations": "npm:~26.2.5"
+    "@syncfusion/ej2-pdf-export": "npm:~26.2.5"
+    "@syncfusion/ej2-svg-base": "npm:~26.2.5"
+  checksum: 10/5c57ce05d59e3b201da49823799742eeb50a92ef007f5e45668b51db3811e5ada63336907770bd60f6a2bb1ccd69c35716e17e1fb04bccba73cab20916ea2d5d
+  languageName: node
+  linkType: hard
+
+"@syncfusion/ej2-compression@npm:~26.2.5":
+  version: 26.2.5
+  resolution: "@syncfusion/ej2-compression@npm:26.2.5"
+  dependencies:
+    "@syncfusion/ej2-file-utils": "npm:~26.2.5"
+  checksum: 10/6190478e4d93aaaa5b2a0fa209140b722d2cac3b5edea3bfb2f8dbd67557493a4f179bf74b9f9bb2dcfc8378174c3568a102429fd81070d9bf95f8b7a2e15b71
+  languageName: node
+  linkType: hard
+
+"@syncfusion/ej2-data@npm:~26.2.5":
+  version: 26.2.5
+  resolution: "@syncfusion/ej2-data@npm:26.2.5"
+  dependencies:
+    "@syncfusion/ej2-base": "npm:~26.2.5"
+  checksum: 10/fbfacbf759ad28b481413e64985d43eab9406d15ee000533eaf5b9269b65c80ad83dea03fa6242ae1536f67f467876629f3033e16e96619247375164fc5ee206
+  languageName: node
+  linkType: hard
+
+"@syncfusion/ej2-excel-export@npm:~26.2.5":
+  version: 26.2.5
+  resolution: "@syncfusion/ej2-excel-export@npm:26.2.5"
+  dependencies:
+    "@syncfusion/ej2-base": "npm:~26.2.5"
+    "@syncfusion/ej2-compression": "npm:~26.2.5"
+  checksum: 10/8ff2846751ed2cbbba2708d8c86da4f444fa6043714338f2a686e84563c88e8033190aa464abd222fabf46b9b485e3ff4432e78aefb6c6d143477fe5fce803a1
+  languageName: node
+  linkType: hard
+
+"@syncfusion/ej2-file-utils@npm:~26.2.5":
+  version: 26.2.5
+  resolution: "@syncfusion/ej2-file-utils@npm:26.2.5"
+  checksum: 10/6a6d1e719062f5a8ece4550e65678a9764f09344c8d05d391bfba9043b480bef8bb74ab4ef0a2c5fa97656f7b73e83288f4b04d32dd113e4ad5f8fae9e2d6861
+  languageName: node
+  linkType: hard
+
+"@syncfusion/ej2-icons@npm:~26.2.5":
+  version: 26.2.5
+  resolution: "@syncfusion/ej2-icons@npm:26.2.5"
+  checksum: 10/9b40f4694f1ae5c7ea75aee1882e0b2cc7923618652a3a9b325efdec09222ba60e82cc2a554f9c33717590d7d5b83ca9d9fc4b07739008f22afbef2cdf619a78
+  languageName: node
+  linkType: hard
+
+"@syncfusion/ej2-inputs@npm:~26.2.5":
+  version: 26.2.5
+  resolution: "@syncfusion/ej2-inputs@npm:26.2.5"
+  dependencies:
+    "@syncfusion/ej2-base": "npm:~26.2.5"
+    "@syncfusion/ej2-buttons": "npm:~26.2.5"
+    "@syncfusion/ej2-popups": "npm:~26.2.5"
+    "@syncfusion/ej2-splitbuttons": "npm:~26.2.5"
+  checksum: 10/87ebd5acb4a8457ec2d6a09fb1a438d909249faec4f8b87d0502be48b960ce7c146e4e377af07512fd3f066f11d9058dbb40e6f37679c25d3277963763b1a3f7
+  languageName: node
+  linkType: hard
+
+"@syncfusion/ej2-lists@npm:~26.2.5":
+  version: 26.2.5
+  resolution: "@syncfusion/ej2-lists@npm:26.2.5"
+  dependencies:
+    "@syncfusion/ej2-base": "npm:~26.2.5"
+    "@syncfusion/ej2-buttons": "npm:~26.2.5"
+    "@syncfusion/ej2-data": "npm:~26.2.5"
+    "@syncfusion/ej2-popups": "npm:~26.2.5"
+  checksum: 10/274268cb4b3092975428e9cfeaf791965a1acc6335b1f3668ce88559182f0db05d99a16b8af63d578028fb8c501fdc23e4358d399f2ec2f40424f87650fa5d77
+  languageName: node
+  linkType: hard
+
+"@syncfusion/ej2-navigations@npm:~26.2.5":
+  version: 26.2.7
+  resolution: "@syncfusion/ej2-navigations@npm:26.2.7"
+  dependencies:
+    "@syncfusion/ej2-base": "npm:~26.2.5"
+    "@syncfusion/ej2-buttons": "npm:~26.2.7"
+    "@syncfusion/ej2-data": "npm:~26.2.5"
+    "@syncfusion/ej2-inputs": "npm:~26.2.5"
+    "@syncfusion/ej2-lists": "npm:~26.2.5"
+    "@syncfusion/ej2-popups": "npm:~26.2.5"
+  checksum: 10/505905edeb9f8d366686f4567d00ef73ff8283d95f123942761bcebb9e00c6c6b4b5a8b7cfed4943afa6b7ec32acb0864f4fff3537f58cfb526118c74ea583d1
+  languageName: node
+  linkType: hard
+
+"@syncfusion/ej2-pdf-export@npm:~26.2.5":
+  version: 26.2.5
+  resolution: "@syncfusion/ej2-pdf-export@npm:26.2.5"
+  dependencies:
+    "@syncfusion/ej2-compression": "npm:~26.2.5"
+  checksum: 10/e182e4b492469974345d8fabc9a594e332019faae4a992421f17f813a4bd39a2f97ccc1740a341c6dd4c0d7ea9c305a98d592df627da3656926ba64062454f3d
+  languageName: node
+  linkType: hard
+
+"@syncfusion/ej2-popups@npm:~26.2.5":
+  version: 26.2.5
+  resolution: "@syncfusion/ej2-popups@npm:26.2.5"
+  dependencies:
+    "@syncfusion/ej2-base": "npm:~26.2.5"
+    "@syncfusion/ej2-buttons": "npm:~26.2.5"
+  checksum: 10/6f561cb8ae08cf5c870923d84a65699fec1ff50ee25aebd3aeb093eedd4901456be13f43e7345889cd56667d417ce984b492d571113692fc11aabddcf7480221
+  languageName: node
+  linkType: hard
+
+"@syncfusion/ej2-react-base@npm:~26.2.5":
+  version: 26.2.5
+  resolution: "@syncfusion/ej2-react-base@npm:26.2.5"
+  dependencies:
+    "@syncfusion/ej2-base": "npm:~26.2.5"
+  checksum: 10/48c16f5af29c89f354e94a7291c3fb8e9fa98c568d530ebe8a1b898990b714a8fface541d6df45af6fcc52059ab4779bf3ebf919410f83df0eb1d8356d8408a8
+  languageName: node
+  linkType: hard
+
+"@syncfusion/ej2-react-charts@npm:^26.2.5":
+  version: 26.2.5
+  resolution: "@syncfusion/ej2-react-charts@npm:26.2.5"
+  dependencies:
+    "@syncfusion/ej2-base": "npm:~26.2.5"
+    "@syncfusion/ej2-charts": "npm:26.2.5"
+    "@syncfusion/ej2-react-base": "npm:~26.2.5"
+  checksum: 10/8dad6d8f7fb725f42c660ebb281d01d887529fa693abc6a29d21cacfdad9e90a0c40fee156d536ee40e7349d4968baa4ae5dadf560fd9d4eedf9dd2bc6be37e1
+  languageName: node
+  linkType: hard
+
+"@syncfusion/ej2-splitbuttons@npm:~26.2.5":
+  version: 26.2.5
+  resolution: "@syncfusion/ej2-splitbuttons@npm:26.2.5"
+  dependencies:
+    "@syncfusion/ej2-base": "npm:~26.2.5"
+    "@syncfusion/ej2-popups": "npm:~26.2.5"
+  checksum: 10/f7ca4c1a775c4e1de220c96b231b60eece7f8ff8e622828a79f2810c537a376b5e823001c47354c1da364d680c14c9cd79cc7b6ffcc95e72162957e470024e5f
+  languageName: node
+  linkType: hard
+
+"@syncfusion/ej2-svg-base@npm:~26.2.5":
+  version: 26.2.5
+  resolution: "@syncfusion/ej2-svg-base@npm:26.2.5"
+  dependencies:
+    "@syncfusion/ej2-base": "npm:~26.2.5"
+  checksum: 10/82c8d8359de912c9a7c54f7fedd6193dce6985809852ba030b45b9f7ed652b038ef6540b9cae1a77f36f48801834f9913e7dace55c418302126fbd9a013c5f60
   languageName: node
   linkType: hard
 
@@ -5874,8 +6068,11 @@ __metadata:
     "@types/react": "npm:^18.3.3"
     "@types/react-native": "npm:^0.73.0"
     burnt: "npm:^0.12.2"
+    chart.js: "npm:^4.4.3"
     expo-constants: "npm:~16.0.2"
     expo-linking: "npm:~6.3.1"
+    react-chartjs-2: "npm:^5.2.0"
+    react-native-chart-kit: "npm:^6.12.0"
     react-native-safe-area-context: "npm:4.10.4"
     solito: "npm:^4.2.2"
   languageName: unknown
@@ -6720,6 +6917,15 @@ __metadata:
   version: 0.0.2
   resolution: "charenc@npm:0.0.2"
   checksum: 10/81dcadbe57e861d527faf6dd3855dc857395a1c4d6781f4847288ab23cffb7b3ee80d57c15bba7252ffe3e5e8019db767757ee7975663ad2ca0939bb8fcaf2e5
+  languageName: node
+  linkType: hard
+
+"chart.js@npm:^4.4.3":
+  version: 4.4.3
+  resolution: "chart.js@npm:4.4.3"
+  dependencies:
+    "@kurkle/color": "npm:^0.3.0"
+  checksum: 10/89bc1f86844679d7f195ed077cfcf12182aecb7f23f9a34bba27c5934d6cfe2c0b7d521109a8e770df940a3668b01fcea992302f28093dfa2c8e71b835f8f37d
   languageName: node
   linkType: hard
 
@@ -9642,6 +9848,7 @@ __metadata:
   dependencies:
     "@babel/runtime": "npm:^7.24.6"
     "@manypkg/cli": "npm:^0.21.4"
+    "@syncfusion/ej2-react-charts": "npm:^26.2.5"
     check-dependency-version-consistency: "npm:^4.1.0"
     eslint: "npm:^9.3.0"
     node-gyp: "npm:^10.1.0"
@@ -13525,6 +13732,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"paths-js@npm:^0.4.10":
+  version: 0.4.11
+  resolution: "paths-js@npm:0.4.11"
+  checksum: 10/b3872c8d6bcd863c5003fff0bfb00f5a4ad6a905d99cc021b806fc116ac0cbcfec0eab1381822763993a48fe92a10b2d64ee302cb1fc3ebda71d6b03ee0f2855
+  languageName: node
+  linkType: hard
+
 "pend@npm:~1.2.0":
   version: 1.2.0
   resolution: "pend@npm:1.2.0"
@@ -13639,6 +13853,13 @@ __metadata:
   version: 3.4.0
   resolution: "pngjs@npm:3.4.0"
   checksum: 10/0e9227a413ce4b4f5ebae4465b366efc9ca545c74304f3cc30ba2075159eb12f01a6a821c4f61f2b048bd85356abbe6d2109df7052a9030ef4d7a42d99760af6
+  languageName: node
+  linkType: hard
+
+"point-in-polygon@npm:^1.0.1":
+  version: 1.1.0
+  resolution: "point-in-polygon@npm:1.1.0"
+  checksum: 10/67a6374f0b79bc872bde8e375d7d5ea011a1419c5f4320dfb7705801cd3a8fcaee8bff385465e075b2ce863bbc86ccd74c63345d9f326981cd0807642bc5199c
   languageName: node
   linkType: hard
 
@@ -14014,6 +14235,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-chartjs-2@npm:^5.2.0":
+  version: 5.2.0
+  resolution: "react-chartjs-2@npm:5.2.0"
+  peerDependencies:
+    chart.js: ^4.1.1
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: 10/0a70b60e1a0d1f0cecdd69d70d9ac1c191618c1033d8f942d4728f5eb84c893c82c9e3318be8a3158eb3a7186c0251a8fe0356c9610ea0f0f3f2d4a9c4a0b388
+  languageName: node
+  linkType: hard
+
 "react-devtools-core@npm:^5.0.0":
   version: 5.2.0
   resolution: "react-devtools-core@npm:5.2.0"
@@ -14070,6 +14301,21 @@ __metadata:
   version: 17.0.2
   resolution: "react-is@npm:17.0.2"
   checksum: 10/73b36281e58eeb27c9cc6031301b6ae19ecdc9f18ae2d518bdb39b0ac564e65c5779405d623f1df9abf378a13858b79442480244bd579968afc1faf9a2ce5e05
+  languageName: node
+  linkType: hard
+
+"react-native-chart-kit@npm:^6.12.0":
+  version: 6.12.0
+  resolution: "react-native-chart-kit@npm:6.12.0"
+  dependencies:
+    lodash: "npm:^4.17.13"
+    paths-js: "npm:^0.4.10"
+    point-in-polygon: "npm:^1.0.1"
+  peerDependencies:
+    react: "> 16.7.0"
+    react-native: ">= 0.50.0"
+    react-native-svg: "> 6.4.1"
+  checksum: 10/a3ed6c3d6e131dae26f7ab3639233c54d1b37fba99a6c07df7a4503b0661887c56ba0a55263728f4948b4725c0b496c6f622f3c198a0d4308c017e2f52fc1f71
   languageName: node
   linkType: hard
 

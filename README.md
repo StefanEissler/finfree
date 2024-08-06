@@ -1,8 +1,14 @@
 # Tamagui + Solito + Next + Expo Monorepo
 
-```sh
-npm create tamagui
-```
+## TODO
+
+- Implement Auth Helpers
+- Think of possible features
+- Create the Rest of supabase
+- Check out charts.js
+
+
+
 
 ## 🔦 About
 
