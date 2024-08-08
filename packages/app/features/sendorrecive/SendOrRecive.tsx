@@ -1,16 +1,23 @@
 import { Card, Button, H5, Image, Input, Paragraph, Spacer, Spinner, Stack, XStack } from "@my/ui"
 import { ClipboardCheck, ClipboardCopy } from "@tamagui/lucide-icons"
-import { useState } from "react"
+import { useEffect, useState } from "react"
+import { jsx } from "react/jsx-runtime"
 //import Clipboard from "@react-native-clipboard/clipboard"
 import { useSearchParams } from "solito/navigation"
 
 type Params = { option: string }
+const params = useSearchParams<Params>()
 
-export const SendOrRecive = () => {
-  const params = useSearchParams<Params>()
-  const option = params?.get("option")
+export const SendOrRecive = (params) => {
   const [copiedToClipBoard, setCopiedToClipBoard] = useState(false)
 
+  // Needs another page for the recive part. Dosent really work...
+  let option
+
+  useEffect(() => {
+    option = params?.get("option")
+  }, [params]);
+  console.log(params)
   //const clipboard = Clipboard
 
   /*
