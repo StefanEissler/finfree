@@ -13,9 +13,9 @@ export const UserHeader = () => {
 
   if (!user) {
     return (
-      <Card gap="$3" onPress={() => handleCardClick()}>
-        <XStack>
-          <Avatar>
+      <Card p="$4" gap="$5" onPress={() => handleCardClick()} hoverTheme>
+        <XStack gap="$4">
+          <Avatar m="$3" padding="$5" circular>
             <Avatar.Image
             />
             <Avatar.Fallback backgroundColor="blue" />
@@ -32,7 +32,7 @@ export const UserHeader = () => {
   return (
     <Card>
       <XStack>
-        <Avatar>
+        <Avatar m="$3" padding="$5" circular>
           <Avatar.Image
           />
           <Avatar.Fallback backgroundColor="blue" />

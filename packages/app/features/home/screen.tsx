@@ -3,10 +3,12 @@ import {
   YStack,
   Stack,
   isWeb,
+  ScrollView,
 } from '@my/ui'
 import { useLink } from 'solito/navigation'
 import { HomeChart } from './HomeChart'
-import { TransactionList } from '../transactions/TransactionList'
+import { TransactionList, dummyData } from '../transactions/TransactionList'
+import { CurrentBalance } from './CurrentBalance'
 
 
 export function HomeScreen({ pagesMode = false }: { pagesMode?: boolean }) {
@@ -17,14 +19,17 @@ export function HomeScreen({ pagesMode = false }: { pagesMode?: boolean }) {
 
 
   return (
-    <YStack f={1} jc="center" ai="center" gap="$8" p="$4" bg="$background">
-      <YStack gap="$4">
-        <HomeChart />
-        <Separator />
-        <Stack margin="$2">
-          <TransactionList />
-        </Stack>
+    <YStack f={1} p="$1" alignContent='center' bg="$background">
+      <YStack marginTop="$7" ai="center">
+        <CurrentBalance props={{ marginTop: "$4" }} />
+        <ScrollView width="100%" p="$1">
+          <HomeChart />
+          <Separator m="$3" />
+          <Stack p="$2">
+            <TransactionList />
+          </Stack>
+        </ScrollView>
       </YStack>
-    </YStack>
+    </YStack >
   )
 }

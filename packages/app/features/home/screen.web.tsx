@@ -6,10 +6,13 @@ import {
   H1,
   SwitchThemeButton,
   XStack,
+  Card,
 } from '@my/ui'
 import { useLink } from 'solito/navigation'
 import { TransactionList } from '../transactions/TransactionList'
 import { HomeChartJS } from './HomeChartJS'
+import { CurrentBalance } from './CurrentBalance'
+import { SendReciveSheet } from '../sendorrecive/SendReciveSheet'
 
 
 export function HomeScreenWeb({ pagesMode = false }: { pagesMode?: boolean }) {
@@ -23,14 +26,26 @@ export function HomeScreenWeb({ pagesMode = false }: { pagesMode?: boolean }) {
     <YStack f={1} w="100%" jc="center" ai="center" gap="$8" p="$4" bg="$background">
       <XStack>
         <HomeChartJS />
-        <YStack gap="$4">
+        <Separator vertical m="$10" />
+        <YStack ai="center" gap="$4">
           <H1>Welcome to FinFree</H1>
+          <Card
+            p="$4.5"
+            m="$1"
+            elevate
+            width="100%"
+          >
+            <XStack gap="$5" jc="space-evenly" ai="center">
+              <CurrentBalance />
+              <SendReciveSheet buttonStyle={{ size: "$7" }} />
+            </XStack>
+          </Card>
           <Separator />
-          <Stack margin="$2">
+          <Stack alignSelf='stretch' margin="$2">
             <TransactionList />
           </Stack>
         </YStack>
-      </XStack>
-    </YStack>
+      </XStack >
+    </YStack >
   )
 }

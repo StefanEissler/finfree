@@ -1,22 +1,20 @@
 
 import { Button, Paragraph, Stack, SwitchThemeButton, XStack, YStack } from "@my/ui";
 import { Menu, X } from "@tamagui/lucide-icons";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import { Link } from "solito/link";
 
 export const SideNavBar = () => {
-  const navBarRef = useRef(null);
+  const navBarRef = useRef<HTMLAnchorElement>(null);
 
   const openNav = () => {
-    if (navBarRef.current) {
+    if (navBarRef.current)
       navBarRef.current.style.width = "300px";
-    }
   };
 
   const closeNav = () => {
-    if (navBarRef.current) {
+    if (navBarRef.current)
       navBarRef.current.style.width = "0";
-    }
   };
 
 
@@ -51,16 +49,26 @@ export const SideNavBar = () => {
           justifyContent="center"
         />
         <Stack
-          width="250px"
+          width={250}
           ai="center"
         >
           <Link href="/">
-            <Paragraph onPress={closeNav}>
+            <Paragraph
+              onPress={closeNav}
+              hoverStyle={{
+                textDecorationLine: "underline"
+              }}
+            >
               Home
             </Paragraph>
           </Link>
           <Link href="/settings">
-            <Paragraph onPress={closeNav}>
+            <Paragraph
+              onPress={closeNav}
+              hoverStyle={{
+                textDecorationLine: "underline"
+              }}
+            >
               Settings
             </Paragraph>
           </Link>
@@ -68,4 +76,4 @@ export const SideNavBar = () => {
       </YStack>
     </Stack>
   );
-};
+}

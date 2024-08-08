@@ -1,8 +1,8 @@
 import { Line } from "react-chartjs-2";
 import Chart from "chart.js/auto";
 import { CategoryScale } from "chart.js";
-import { Stack, Theme } from "@my/ui";
-import { colorTokens } from "@tamagui/themes";
+import { Stack, Theme, themeable } from "@my/ui";
+import { color, colorTokens, lightColors } from "@tamagui/themes";
 import { tokens } from "@tamagui/themes/v3-themes";
 
 Chart.register(CategoryScale)
@@ -14,20 +14,22 @@ export const HomeChartJS = () => {
     // datasets is an array of objects where each object represents a set of data to display corresponding to the labels above. for brevity, we'll keep it at one object
     datasets: [
       {
-        label: 'Popularity of colours',
-        data: [1000.50, 1200.23, 1200.23, 1200.23, 1200.23, 1200.23, 1200.23],
+        label: 'Satoshis',
+        data: [1000.50, 3000.23, 2500.23, 900.23, 4000.23, 3450.23, 2890.23],
         backgroundColor: [
           'rgba(255, 255, 255, 0.6)',
         ],
-        borderColor: "$color10",
+        fill: false,
+        borderColor: "#f08c51",
         borderWidth: 2,
+        tension: 0.2
       }
     ]
   }
 
 
   return (
-    <Stack f={1} jc="center" width={600} margin="$5">
+    <Stack f={1} jc="center" width={600} margin="$10">
       <Line
         data={chartData}
         options={{

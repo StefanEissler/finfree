@@ -1,5 +1,7 @@
-import { TransactionScreen } from "app/features/transactions/screen"
+import { SendOrRecive } from "app/features/sendorrecive/SendOrRecive"
+import { YStack } from "@my/ui"
 import { Stack } from "expo-router"
+
 
 export default function Page() {
 
@@ -7,6 +9,7 @@ export default function Page() {
     <>
       <Stack.Screen
         options={{
+          headerShown: false,
           title: 'Transaction',
           presentation: 'modal',
           animation: 'slide_from_right',
@@ -14,7 +17,9 @@ export default function Page() {
           gestureDirection: 'horizontal',
         }}
       />
-      <TransactionScreen />
+      <YStack backgroundColor="$color1" f={1} ai="center" jc="center">
+        <SendOrRecive />
+      </YStack>
     </>
   )
 }
