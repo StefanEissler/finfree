@@ -11,12 +11,12 @@ export const SendReciveSheet = ({ buttonStyle, ...props }) => {
   const router = useRouter()
 
   function navigateToRecive() {
+    router.push("/recive")
     setOpen(false)
-    router.push("/send?option=recive")
   }
 
   function navigateToSend() {
-    props.onPress()
+    router.push("/send")
     setOpen(false)
   }
 

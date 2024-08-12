@@ -1,4 +1,4 @@
-import { SendMoney } from "app/features/sendorrecive/SendMoney"
+import { ReciveMoney } from "app/features/sendorrecive/ReciveMoney"
 import { YStack } from "@my/ui"
 import { Stack } from "expo-router"
 
@@ -18,7 +18,7 @@ export default function Page() {
         }}
       />
       <YStack backgroundColor="$color1" f={1} ai="center" jc="center">
-        <SendMoney />
+        <ReciveMoney />
       </YStack>
     </>
   )

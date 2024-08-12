@@ -8,15 +8,6 @@ type TransactionParam = {
   id: string
 }
 
-const dummyTransaction = {
-  id: 10,
-  name: "Bäckerei",
-  amount: 30.2,
-  currency: "EUR",
-  date: Date.now(),
-  type: "expense"
-}
-
 export const TransactionScreen = () => {
   const { id } = useParams<TransactionParam>()
 

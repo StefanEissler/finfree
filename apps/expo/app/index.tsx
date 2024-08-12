@@ -1,12 +1,15 @@
-import { H1 } from "@my/ui";
-import { Link } from "expo-router";
+import { H1, Button } from "@my/ui";
+import { useRouter } from "expo-router";
+import { Home } from '@tamagui/lucide-icons'
+
 
 
 export default function Page() {
+  const router = useRouter()
   return (
     <>
       <H1>Welcome</H1>
-      <Link href="/home">To the Tabs</Link>
+      <Button icon={Home} onPress={() => router.push("/home")} />
     </>
   )
 }

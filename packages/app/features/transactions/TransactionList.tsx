@@ -54,6 +54,26 @@ export const dummyData = [
     date: Date.now(),
     type: "expense"
   },
+  {
+    id: "6",
+    name: "Zug Ticket",
+    amount: 40.2,
+    currency: "EUR",
+    from: "bc12399239210",
+    to: "DE12 3943 2942 1233 3492",
+    date: Date.now(),
+    type: "expense"
+  },
+  {
+    id: "7",
+    name: "Freibad",
+    amount: 10.75,
+    currency: "EUR",
+    from: "bc12399239210",
+    to: "DE12 3943 2942 1233 3492",
+    date: Date.now(),
+    type: "expense"
+  },
 ]
 export const TransactionList = (props) => {
   const [transactions, setTransactions] = useState(dummyData)

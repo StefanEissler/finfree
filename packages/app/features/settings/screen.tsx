@@ -7,7 +7,8 @@ export const SettingsScreen = () => {
   return (
     <Stack
       padding="$2"
-
+      bg="$background"
+      f={1}
     >
       <UserHeader />
       <Spacer />

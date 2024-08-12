@@ -57,7 +57,13 @@ export default function TabsLayout() {
           tabBarIcon: () => <Settings />,
         }}
       />
-    </Tabs >
+      <Tabs.Screen
+        name='recive'
+        options={{
+          href: null
+        }}
+      />
+    </Tabs>
   )
 }
 
