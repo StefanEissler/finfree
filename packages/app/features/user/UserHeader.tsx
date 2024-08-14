@@ -1,10 +1,17 @@
-import { Avatar, AvatarFallback, Card, H3, Paragraph, XStack, YStack } from "@my/ui"
+import { Avatar, AvatarFallback, Card, H3, Paragraph, Text, XStack, YStack } from "@my/ui"
 import { useUser } from "@supabase/auth-helpers-react";
 import { User } from "@tamagui/lucide-icons";
 import { useRouter } from "solito/router";
 
+
+const ExampleUser = {
+  name: "Stefan Eißler",
+  picture: "https://mbddwyllcycsqyuinbvq.supabase.co/storage/v1/object/public/avatars/Stefan.png",
+  email: "stefaneissler@web.de"
+}
+
 export const UserHeader = () => {
-  const user = useUser()
+  const user = ExampleUser//useUser()
   const router = useRouter()
 
   const handleCardClick = () => {
@@ -34,12 +41,13 @@ export const UserHeader = () => {
       <XStack>
         <Avatar m="$3" padding="$5" circular>
           <Avatar.Image
+            src={user.picture}
           />
           <Avatar.Fallback backgroundColor="blue" />
         </Avatar>
         <YStack>
-          <H3>{user.user_metadata.username}</H3>
-          <Paragraph>{user.email}</Paragraph>
+          <H3>{user.name}</H3>
+          <Text>{user.email}</Text>
         </YStack>
       </XStack>
     </Card>

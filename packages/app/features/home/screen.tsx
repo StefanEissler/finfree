@@ -19,10 +19,10 @@ export function HomeScreen({ pagesMode = false }: { pagesMode?: boolean }) {
 
 
   return (
-    <YStack w="100%" p="$1" alignContent='center' bg="$background" >
-      <YStack marginTop="$7" ai="center">
+    <YStack flex={1} height="100%" w="100%" p="$1" alignContent='center' bg="$background" >
+      <YStack marginTop="$7" ai="center" flexGrow={1}>
         <CurrentBalance props={{ marginTop: "$4" }} />
-        <ScrollView height="100%" w="100%" p="$1">
+        <ScrollView flex={1} w="100%" p="$1">
           <HomeChart />
           <Separator m="$3" />
           <Stack p="$2">

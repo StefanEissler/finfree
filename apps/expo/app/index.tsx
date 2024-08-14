@@ -1,5 +1,5 @@
 import { H1, Button } from "@my/ui";
-import { useRouter } from "expo-router";
+import { Redirect, Slot, useRouter } from "expo-router";
 import { Home } from '@tamagui/lucide-icons'
 
 
@@ -7,9 +7,6 @@ import { Home } from '@tamagui/lucide-icons'
 export default function Page() {
   const router = useRouter()
   return (
-    <>
-      <H1>Welcome</H1>
-      <Button icon={Home} onPress={() => router.push("/home")} />
-    </>
+    <Redirect href="/home" />
   )
 }
