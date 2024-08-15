@@ -1,7 +1,9 @@
 import { isWeb, ListItem, SwitchThemeButton, YGroup } from "@my/ui"
 import { Bell, DollarSign, Languages, Sun, User } from "@tamagui/lucide-icons"
+import { useRouter } from "solito/router"
 
 export const SettingsList = () => {
+  const router = useRouter()
 
   return (
     <YGroup alignSelf="center" hoverTheme bordered>
@@ -11,6 +13,7 @@ export const SettingsList = () => {
           size="$6"
           hoverTheme
           title="Account Settings"
+          onPress={() => router.push("/setting/account")}
         />
       </YGroup.Item>
       <YGroup.Item>
@@ -19,6 +22,7 @@ export const SettingsList = () => {
           size="$6"
           hoverTheme
           title="Currency Settings"
+          onPress={() => router.push("/setting/currency")}
         />
       </YGroup.Item>
       <YGroup.Item>
@@ -27,6 +31,7 @@ export const SettingsList = () => {
           size="$6"
           hoverTheme
           title="Language Settings"
+          onPress={() => router.push("/setting/language")}
         />
       </YGroup.Item>
       <YGroup.Item>
@@ -34,7 +39,8 @@ export const SettingsList = () => {
           icon={Bell}
           size="$6"
           hoverTheme
-          title="Notfication Settings"
+          title="Notification Settings"
+          onPress={() => router.push("/setting/notification")}
         />
       </YGroup.Item>
       {isWeb && (

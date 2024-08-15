@@ -1,5 +1,5 @@
-import { TransactionScreen } from "app/features/transactions/screen"
 import { Stack } from "expo-router"
+import { SettingDetailScreen } from "app/features/settings/SettingDetailScreen"
 
 export default function Page() {
 
@@ -7,14 +7,14 @@ export default function Page() {
     <>
       <Stack.Screen
         options={{
-          title: "Transaction",
+          title: "Setting",
           presentation: 'modal',
           animation: 'slide_from_right',
           gestureEnabled: true,
           gestureDirection: 'horizontal',
         }}
       />
-      <TransactionScreen />
+      <SettingDetailScreen />
     </>
   )
 }

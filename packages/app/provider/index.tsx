@@ -1,10 +1,11 @@
 import { useColorScheme } from 'react-native'
 import { CustomToast, TamaguiProvider, TamaguiProviderProps, ToastProvider, config } from '@my/ui'
 import { ToastViewport } from './ToastViewport'
+import { BalanceContext, BalanceProvider } from '../hooks/BalanceContext'
 
 export function Provider({ children, ...rest }: Omit<TamaguiProviderProps, 'config'>) {
   const colorScheme = useColorScheme()
-  
+
   return (
     <TamaguiProvider config={config} defaultTheme={colorScheme === 'dark' ? 'dark' : 'light'} {...rest}>
       <ToastProvider
@@ -17,8 +18,10 @@ export function Provider({ children, ...rest }: Omit<TamaguiProviderProps, 'conf
           ]
         }
       >
-        {children}
-        <CustomToast />
+        <BalanceProvider>
+          {children}
+          <CustomToast />
+        </BalanceProvider>
         <ToastViewport />
       </ToastProvider>
     </TamaguiProvider>
