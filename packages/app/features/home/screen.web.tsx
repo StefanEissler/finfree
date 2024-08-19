@@ -2,25 +2,17 @@ import {
   Separator,
   YStack,
   Stack,
-  isWeb,
   H1,
-  SwitchThemeButton,
   XStack,
   Card,
 } from '@my/ui'
-import { useLink } from 'solito/navigation'
 import { TransactionList } from '../transactions/TransactionList'
 import { HomeChartJS } from './HomeChartJS'
 import { CurrentBalance } from './CurrentBalance'
 import { SendReciveSheet } from '../sendorrecive/SendReciveSheet'
 
 
-export function HomeScreenWeb({ pagesMode = false }: { pagesMode?: boolean }) {
-  const linkTarget = pagesMode ? '/pages-example-user' : '/user'
-  const linkProps = useLink({
-    href: `${linkTarget}/nate`,
-  })
-
+export function HomeScreenWeb() {
 
   return (
     <YStack f={1} w="100%" jc="center" ai="center" gap="$8" p="$4" bg="$background">

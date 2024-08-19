@@ -38,6 +38,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "4763c738-ed3f-4287-a35f-76b6ae8422ce"
+      }
+    },
+    "owner": "stefaneissler"
   }
 }

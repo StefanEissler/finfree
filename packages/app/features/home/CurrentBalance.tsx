@@ -1,7 +1,7 @@
-import { H2, H3, Paragraph, SizableText, Spacer, XStack, YStack } from "@my/ui"
+import { Paragraph, SizableText, Spacer, XStack, YStack } from "@my/ui"
 import { Bitcoin } from "@tamagui/lucide-icons"
-import { BalanceContext } from "packages/app/hooks/BalanceContext"
-import { useContext, useState } from "react"
+import { BalanceContext } from "../../hooks/BalanceContext"
+import { useContext } from "react"
 
 export const CurrentBalance = (props) => {
   const { currentBalanceAmount } = useContext(BalanceContext)
