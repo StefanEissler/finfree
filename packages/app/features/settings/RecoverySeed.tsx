@@ -14,7 +14,7 @@ export const RecoverySeed = () => {
       <Paragraph>Please don´t show this to anyone and keep it secure!</Paragraph>
       <Spacer />
       <Button iconAfter={isBlurred ? Eye : EyeOff} alignSelf="center" onPress={() => setIsBlurred(!isBlurred)}>Reveal Recovery Seed</Button>
-      <Stack>
+      <Stack f={1}>
         <FlatList
           data={[
             { key: "toe" },

@@ -123,7 +123,7 @@ export const TransactionList = (props) => {
                   {amount + " "}
                 </ListItem.Text>
                 {currency === "SAT" ?
-                  <Paragraph>SAT</Paragraph> :
+                  <Paragraph>{' '}SAT</Paragraph> :
                   <Bitcoin />
                 }
               </XStack>

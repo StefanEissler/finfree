@@ -27,7 +27,7 @@ export const CurrencySetting = () => {
   return (
     <Stack p={10} backgroundColor="$background" f={1} gap="$5">
       <XStack ai="center" jc="space-around">
-        <H3>Currency shown in:</H3>
+        <H3>Currency:</H3>
         <Paragraph>{isChecked ? "SAT" : <Bitcoin />}</Paragraph>
         <Stack width="$3">
           <Switch

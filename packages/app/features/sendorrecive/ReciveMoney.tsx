@@ -18,15 +18,15 @@ export const ReciveMoney = () => {
   }
 
   return (
-    <Stack width="90%">
-      <Card p="$5">
+    <Stack width="95%">
+      <Card p="$3">
         <H5>Your address:</H5>
         <XStack ai="center" gap="$2">
           <Paragraph>bc124kaösde9skdje93kjdfi93kdf93</Paragraph>
 
           {!copiedToClipBoard ?
             <Button icon={ClipboardCopy} size="$5" onPress={() => copyAddress()} hoverTheme={false} chromeless /> :
-            <Button icon={ClipboardCheck} size="$5" disabled chromeless />
+            <Button icon={ClipboardCheck} size="$4" disabled chromeless />
           }
         </XStack>
       </Card>

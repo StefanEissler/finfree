@@ -1,4 +1,4 @@
-import { Stack, YStack, Text, useTheme, XStack } from "@my/ui"
+import { Stack, YStack, Text, useTheme, XStack, Paragraph, Spacer } from "@my/ui"
 import { Bitcoin } from "@tamagui/lucide-icons";
 import { CurveType } from "gifted-charts-core"
 import { LineChart } from "react-native-gifted-charts"
@@ -52,11 +52,11 @@ const ptData = [
     label: '30 Apr',
     labelTextStyle: { color: 'lightgray', width: 60 },
   },
-  { value: 1200, date: '1 May 2022' },
-  { value: 1200, date: '2 May 2022' },
-  { value: 1200, date: '3 May 2022' },
-  { value: 1200, date: '4 May 2022' },
-  { value: 1200, date: '5 May 2022' },
+  { value: 950, date: '1 May 2022' },
+  { value: 930, date: '2 May 2022' },
+  { value: 850, date: '3 May 2022' },
+  { value: 850, date: '4 May 2022' },
+  { value: 800, date: '5 May 2022' },
 ];
 
 
@@ -111,11 +111,14 @@ export const HomeChart = () => {
                 </Text>
 
                 <Stack style={{ paddingHorizontal: 14, paddingVertical: 6, borderRadius: 16, backgroundColor: theme.background.val }}>
-                  <XStack>
-                    <Bitcoin />
+                  <XStack ai='center'>
                     <Text style={{ fontWeight: 'bold', textAlign: 'center' }}>
-                      {items[0].value + '.0'}
+                      {items[0].value}
                     </Text>
+                    <Spacer size='$1' />
+                    <Paragraph size={12}>
+                      SAT
+                    </Paragraph>
                   </XStack>
                 </Stack>
               </Stack>

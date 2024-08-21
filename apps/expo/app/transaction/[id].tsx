@@ -7,7 +7,7 @@ export default function Page() {
     <>
       <Stack.Screen
         options={{
-          title: "Transaction",
+          title: 'Transaction',
           presentation: 'modal',
           animation: 'slide_from_right',
           gestureEnabled: true,
