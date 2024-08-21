@@ -1,17 +1,16 @@
-import { Avatar, Button, H3, Paragraph, Progress, SizableText, Spacer, XStack, YStack } from '@my/ui'
+import { Avatar, Paragraph, Stack } from '@my/ui'
 import { LinearGradient } from 'tamagui/linear-gradient'
-
-import { Bitcoin, ChevronLeft } from '@tamagui/lucide-icons'
 import { useParams, useRouter } from 'solito/navigation'
 import { exampleUser } from './UserHeader'
 import { FinancialGoal } from './FinancialGoal'
+import { UserForm } from './UserForm'
 
 export function UserDetailScreen() {
   const router = useRouter()
   const { id } = useParams()
 
   return (
-    <YStack f={1} ai="center" bg="$background">
+    <Stack f={1} ai="center" bg="$background">
       <LinearGradient
         width="100%"
         height={200}
@@ -35,8 +34,8 @@ export function UserDetailScreen() {
         />
         <Avatar.Fallback backgroundColor="blue" />
       </Avatar>
-      <Paragraph ta="center" fow="700" color="$blue10" >{`User ID: ${id}`}</Paragraph>
-      <FinancialGoal />
-    </YStack>
+      <Paragraph>{`User ID: ${id}`}</Paragraph>
+      {/*<UserForm />*/}
+    </Stack>
   )
 }

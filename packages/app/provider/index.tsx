@@ -1,7 +1,8 @@
 import { useColorScheme } from 'react-native'
 import { CustomToast, TamaguiProvider, TamaguiProviderProps, ToastProvider, config } from '@my/ui'
 import { ToastViewport } from './ToastViewport'
-import { BalanceContext, BalanceProvider } from '../hooks/BalanceContext'
+import { BalanceProvider } from '../hooks/BalanceContext'
+import { CurrencyProvider } from '../hooks/CurrencyContext'
 
 export function Provider({ children, ...rest }: Omit<TamaguiProviderProps, 'config'>) {
   const colorScheme = useColorScheme()
@@ -19,8 +20,10 @@ export function Provider({ children, ...rest }: Omit<TamaguiProviderProps, 'conf
         }
       >
         <BalanceProvider>
-          {children}
-          <CustomToast />
+          <CurrencyProvider>
+            {children}
+            <CustomToast />
+          </CurrencyProvider>
         </BalanceProvider>
         <ToastViewport />
       </ToastProvider>

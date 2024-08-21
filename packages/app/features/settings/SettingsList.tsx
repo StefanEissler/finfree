@@ -1,5 +1,5 @@
 import { isWeb, ListItem, SwitchThemeButton, YGroup } from "@my/ui"
-import { Bell, DollarSign, Languages, Sun, User } from "@tamagui/lucide-icons"
+import { Bell, DollarSign, Languages, Lock, Sun } from "@tamagui/lucide-icons"
 import { useRouter } from "solito/router"
 
 export const SettingsList = () => {
@@ -9,10 +9,10 @@ export const SettingsList = () => {
     <YGroup alignSelf="center" hoverTheme bordered>
       <YGroup.Item>
         <ListItem
-          icon={User}
+          icon={Lock}
           size="$6"
           hoverTheme
-          title="Account Settings"
+          title="Recovery Seed"
           onPress={() => router.push("/setting/account")}
         />
       </YGroup.Item>

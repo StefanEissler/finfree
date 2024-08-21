@@ -1,4 +1,4 @@
-import { YStack, XStack, SizableText, Spacer, Progress, Button, H5 } from "@my/ui"
+import { YStack, XStack, SizableText, Spacer, Progress, Button, H5, Paragraph } from "@my/ui"
 import { Bitcoin, Edit3 } from "@tamagui/lucide-icons"
 import { useContext, useState } from "react"
 import { BalanceContext } from "packages/app/hooks/BalanceContext";
@@ -16,7 +16,7 @@ export const FinancialGoal = () => {
         <XStack borderRadius="$3" jc="center" ai="center">
           <SizableText fontFamily="$body" color="$accentColor" size="$10" >{financialGoalAmount}</SizableText>
           <Spacer size="$2" />
-          <Bitcoin size="$3" color="$accentColor" />
+          <Paragraph size="$3" color="$accentColor">SAT</Paragraph>
         </XStack>
         <Spacer margin="$1" />
         <Progress
