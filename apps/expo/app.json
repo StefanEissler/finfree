@@ -33,23 +33,6 @@
     "experiments": {
       "typedRoutes": true
     },
-    "build": {
-      "development": {
-        "developmentClient": true,
-        "distribution": "internal"
-      },
-      "preview": {
-        "distribution": "internal"
-      },
-      "production": {},
-      "development-simulator": {
-        "developmentClient": true,
-        "distribution": "internal",
-        "ios": {
-          "simulator": true
-        }
-      }
-    },
     "extra": {
       "router": {
         "origin": false
