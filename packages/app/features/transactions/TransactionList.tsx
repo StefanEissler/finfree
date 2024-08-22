@@ -1,7 +1,7 @@
 import { ListItem, Paragraph, Text, SizableStack, YStack, SizableText, XStack, H1, H3, Spacer, Separator, XGroup, YGroup, H5, Stack } from "@my/ui"
 import { ArrowDownRight, ArrowUpLeft, ArrowUpRight, Bitcoin, DollarSign, Euro, Router } from "@tamagui/lucide-icons"
-import { CurrencyContext } from "packages/app/hooks/CurrencyContext"
-import { satToBtc } from "packages/app/hooks/CurrencyHelpers"
+import { CurrencyContext } from "../../hooks/CurrencyContext"
+import { satToBtc } from "../../hooks/CurrencyHelpers"
 import { useContext, useState } from "react"
 import { useRouter } from "solito/navigation"
 

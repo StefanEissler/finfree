@@ -1,7 +1,6 @@
 import { Stack, Card, H5, XStack, Paragraph, Spacer, useToastController, Button } from "@my/ui"
-import * as Clipboard from 'expo-clipboard';
 import { ClipboardCopy, ClipboardCheck } from "@tamagui/lucide-icons"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 
 
 export const ReciveMoney = () => {
@@ -12,7 +11,7 @@ export const ReciveMoney = () => {
 
   // not working for nextjs
   const copyAddress = async () => {
-    await Clipboard.setStringAsync(address);
+    navigator.clipboard.writeText(address)
     setCopiedToClipBoard(true)
     toast.show("Address copied to Clipboard")
   }

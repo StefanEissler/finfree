@@ -13,7 +13,7 @@ export default function TabsLayout() {
       screenOptions={{
         tabBarActiveTintColor: theme.color10.val,
         tabBarStyle: {
-          height: "12%",
+          height: 80,
           backgroundColor: theme.background.val,
         },
         tabBarLabelStyle: {

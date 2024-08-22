@@ -1,6 +1,6 @@
 import { H3, Paragraph, Stack, Switch, XStack } from "@my/ui"
 import { Bitcoin } from "@tamagui/lucide-icons"
-import { CurrencyContext } from "packages/app/hooks/CurrencyContext"
+import { CurrencyContext } from "../../hooks/CurrencyContext"
 import { useState, useContext, useEffect } from "react"
 
 export const CurrencySetting = () => {

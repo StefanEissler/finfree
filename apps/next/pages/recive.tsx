@@ -1,4 +1,4 @@
-import { ReciveMoney } from "app/features/sendorrecive/ReciveMoney"
+import { ReciveMoney } from "app/features/sendorrecive/ReciveMoney.web"
 import { Stack } from "tamagui"
 
 

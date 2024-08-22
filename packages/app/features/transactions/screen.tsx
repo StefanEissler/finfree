@@ -3,8 +3,8 @@ import { Suspense, useContext, useEffect, useState } from "react"
 import { useParams } from "solito/navigation"
 import { dummyData } from "./TransactionList"
 import { ArrowDownRight, ArrowUpRight, Bitcoin } from "@tamagui/lucide-icons"
-import { CurrencyContext } from "packages/app/hooks/CurrencyContext"
-import { satToBtc } from "packages/app/hooks/CurrencyHelpers"
+import { CurrencyContext } from "../../hooks/CurrencyContext"
+import { satToBtc } from "../../hooks/CurrencyHelpers"
 
 type TransactionParam = {
   id: string
@@ -52,7 +52,7 @@ export const TransactionScreen = () => {
             </Text>
             {currency === "BTC" ?
               <Bitcoin size="$2" /> :
-              <Paragraph size="$2" color="$accent">SAT</Paragraph>
+              <Paragraph size="$2">SAT</Paragraph>
             }
           </XStack>
           <Spacer size="$5" />
