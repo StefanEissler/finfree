@@ -17,7 +17,7 @@
     "@tamagui/themes": "^1.108.0",
     "burnt": "^0.12.2",
     "chart.js": "^4.4.3",
-    "expo-constants": "~16.0.2",
+    "expo-constants": "^16.0.2",
     "expo-linking": "~6.3.1",
     "gifted-charts-core": "^0.1.29",
     "react-chartjs-2": "^5.2.0",

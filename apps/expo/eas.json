@@ -10,6 +10,12 @@
         "image": "latest"
       }
     },
+    "preview": {
+      "android": {
+        "buildType": "apk",
+        "distribution": "internal"
+      }
+    },
     "development-simulator": {
       "developmentClient": true,
       "distribution": "internal",

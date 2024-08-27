@@ -16,9 +16,9 @@ export function HomeScreenWeb() {
 
   return (
     <YStack f={1} w="100%" jc="center" ai="center" gap="$8" p="$4" bg="$background">
-      <XStack>
+      <Stack flex={1} flexWrap='wrap' flexDirection='row'>
         <HomeChartJS />
-        <Separator vertical m="$10" />
+        <Separator vertical m="$10" $sm={{ display: "none" }} />
         <YStack ai="center" gap="$4">
           <H1>Welcome to FinFree</H1>
           <Card
@@ -37,7 +37,7 @@ export function HomeScreenWeb() {
             <TransactionList />
           </Stack>
         </YStack>
-      </XStack >
+      </Stack >
     </YStack >
   )
 }

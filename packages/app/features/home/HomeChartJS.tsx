@@ -29,7 +29,7 @@ export const HomeChartJS = () => {
 
 
   return (
-    <Stack f={1} jc="center" width={600} margin="$10">
+    <Stack f={1} width={600} margin="$2">
       <Line
         data={chartData}
         options={{

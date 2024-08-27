@@ -97,6 +97,7 @@ export const TransactionList = (props) => {
           const amount = currency === "BTC"
             ? satToBtc(transaction.amount).toFixed(8) // Show up to 8 decimal places for BTC
             : transaction.amount;
+          let date = new Date(transaction.date).toLocaleString();
 
           return (
             <ListItem
@@ -116,9 +117,9 @@ export const TransactionList = (props) => {
               gap="$1.5"
             >
               <YStack ai="flex-start">
-                <Paragraph size="$3">{new Date(transaction.date).toLocaleString()}</Paragraph>
+                <Paragraph size="$3">{date}</Paragraph>
               </YStack>
-              <XStack jc="flex-end" ai="center">
+              <XStack jc="flex-end" ai="center" gap="$1.5">
                 <ListItem.Text fontSize={18} textAlign="right" >
                   {amount + " "}
                 </ListItem.Text>
