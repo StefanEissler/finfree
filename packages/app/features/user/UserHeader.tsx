@@ -36,7 +36,7 @@ export const UserHeader = () => {
   }
 
   return (
-    <Card onPress={() => handleCardClick()} bordered>
+    <Card onPress={() => handleCardClick()} minWidth={300} width="100%" bordered>
       <XStack alignItems="center">
         <Avatar
           m="$4"
@@ -51,7 +51,7 @@ export const UserHeader = () => {
         </Avatar>
         <YStack>
           <H3>{user.name}</H3>
-          <Text>{user.email}</Text>
+          <Text fontSize={14}>{user.email}</Text>
         </YStack>
       </XStack>
     </Card>

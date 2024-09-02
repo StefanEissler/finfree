@@ -9,6 +9,7 @@ export const SettingsScreen = () => {
       padding="$2"
       bg="$background"
       f={1}
+      ai="center"
     >
       <UserHeader />
       <Spacer />

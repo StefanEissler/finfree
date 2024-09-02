@@ -11,10 +11,10 @@ export default function TabsLayout() {
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: theme.color10.val,
+        tabBarActiveTintColor: theme.accentColor?.get() || '#f1925b',
         tabBarStyle: {
-          height: 80,
-          backgroundColor: theme.background.val,
+          height: '12%',
+          backgroundColor: theme.background?.get() || '#fbfcfe',
         },
         tabBarLabelStyle: {
           fontSize: 14,
@@ -37,8 +37,8 @@ export default function TabsLayout() {
           title: 'Send',
           tabBarButton(props) {
             return (
-              <Stack position="relative" width={70} ai="center">
-                <TabBg color={theme.background.val} style={{ position: "absolute", top: 0 }} />
+              <Stack position="relative" width={90} ai="center">
+                <TabBg color={theme.background?.get() || '#fbfcfe'} style={{ position: "absolute", top: 0 }} />
                 <SendReciveSheet {...props} buttonStyle={{
                   position: "absolute",
                   width: "50%",

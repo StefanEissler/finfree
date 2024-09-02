@@ -1,6 +1,4 @@
 import { Stack, YStack, Text, useTheme, XStack, Paragraph, Spacer } from "@my/ui"
-import { Bitcoin } from "@tamagui/lucide-icons";
-import { CurveType } from "gifted-charts-core"
 import { LineChart } from "react-native-gifted-charts"
 
 
@@ -64,8 +62,15 @@ export const HomeChart = () => {
 
   const theme = useTheme()
 
+  const backgroundValue = theme.background?.get() || '#fbfcfe';
+  const accentColor = theme.accentColor?.get() || '#f1925b';
+  const color11 = theme.color11?.val || '#2c2121';
+  const color6 = theme.color6?.get() || '#90aeea';
+  const color8 = theme.color8?.get() || '#6992e2';
+  const color1 = theme.color1?.get() || '#fbfcfe';
+
   return (
-    <YStack margin="$3" width="100%">
+    <YStack margin="$2" width="100%">
       <LineChart
         isAnimated
         areaChart
@@ -73,24 +78,25 @@ export const HomeChart = () => {
         width={300}
         hideDataPoints
         spacing={13}
-        color={theme.accentColor.val}
+        color={accentColor}
         thickness={4}
-        startFillColor={theme.accentColor.val}
-        endFillColor={theme.background.val}
+        startFillColor={accentColor}
+        endFillColor={backgroundValue}
         startOpacity={0.9}
         endOpacity={0.2}
         initialSpacing={0}
         noOfSections={6}
         maxValue={1200}
-        yAxisColor={theme.color11.val}
+        yAxisColor={color11}
         yAxisThickness={0}
-        yAxisTextStyle={{ color: theme.color11.val }}
-        xAxisColor={theme.color1.val}
+        yAxisLabelWidth={50}
+        yAxisTextStyle={{ color: color11 }}
+        xAxisColor={color1}
         pointerConfig={{
           pointerStripHeight: 160,
-          pointerStripColor: theme.color6.val,
+          pointerStripColor: color6,
           pointerStripWidth: 2,
-          pointerColor: theme.color8.val,
+          pointerColor: color8,
           radius: 6,
           pointerLabelWidth: 100,
           pointerLabelHeight: 90,
@@ -106,11 +112,11 @@ export const HomeChart = () => {
                   marginTop: -30,
                   marginLeft: -40,
                 }}>
-                <Text style={{ color: theme.color0.val, fontSize: 14, marginBottom: 6, textAlign: 'center' }}>
+                <Text style={{ color: color11, fontSize: 14, marginBottom: 6, textAlign: 'center' }}>
                   {items[0].date}
                 </Text>
 
-                <Stack style={{ paddingHorizontal: 14, paddingVertical: 6, borderRadius: 16, backgroundColor: theme.background.val }}>
+                <Stack style={{ paddingHorizontal: 14, paddingVertical: 6, borderRadius: 16, backgroundColor: backgroundValue }}>
                   <XStack ai='center'>
                     <Text style={{ fontWeight: 'bold', textAlign: 'center' }}>
                       {items[0].value}

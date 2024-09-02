@@ -40,8 +40,39 @@ function RootLayoutNav() {
   return (
     <Provider>
       <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-        <Stack>
-          <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+        <Stack
+          screenOptions={{
+            headerBackTitleVisible: false
+          }}
+        >
+          <Stack.Screen
+            name="(tabs)"
+            options={{
+              headerShown: false,
+              headerBackTitleVisible: false,
+            }}
+          />
+          <Stack.Screen
+            name="transaction/[id]"
+            options={{
+              title: `Transaction`, // Set specific title for transaction page
+              headerBackTitleVisible: false, // Hides the back title
+            }}
+          />
+          <Stack.Screen
+            name="user/[id]"
+            options={{
+              title: `User`, // Set specific title for transaction page
+              headerBackTitleVisible: false, // Hides the back title
+            }}
+          />
+          <Stack.Screen
+            name="setting/[name]"
+            options={{
+              title: `Setting`, // Set specific title for transaction page
+              headerBackTitleVisible: false, // Hides the back title
+            }}
+          />
         </Stack>
         <NativeToast />
       </ThemeProvider>

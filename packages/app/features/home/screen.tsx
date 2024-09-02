@@ -9,14 +9,12 @@ import {
   Button,
   XStack,
 } from '@my/ui'
-import { useLink } from 'solito/navigation'
 import { HomeChart } from './HomeChart'
-import { TransactionList, dummyData } from '../transactions/TransactionList'
+import { TransactionList } from '../transactions/TransactionList'
 import { CurrentBalance } from './CurrentBalance'
-import { SizableText } from '@my/ui';
 import { FinancialGoal } from '../user/FinancialGoal'
 import { ChevronLeftCircle, ChevronRightCircle } from '@tamagui/lucide-icons'
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import { Dimensions } from 'react-native'
 
 
@@ -39,8 +37,8 @@ export function HomeScreen({ pagesMode = false }: { pagesMode?: boolean }) {
 
 
   return (
-    <YStack flex={1} height="100%" w="100%" p="$1" alignContent='center' bg="$background" >
-      <YStack marginTop="$7" ai="center" flexGrow={1}>
+    <YStack flex={1} height="100%" w="100%" p="$1" pb={0} alignContent='center' bg="$background" >
+      <YStack marginTop="$8" ai="center" flexGrow={1}>
         <CurrentBalance props={{ marginTop: "$4" }} />
         <ScrollView flex={1} w="100%" p="$1">
           <Separator margin={20} />
